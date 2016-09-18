@@ -1,1 +1,4 @@
-
+wallethub-test/target/
+wallethub-test/.settings/
+wallethub-test/.classpath
+wallethub-test/.project
