@@ -1,11 +1,10 @@
 package com.palindrome;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 import com.wallethub.ComplementaryPairs;
 
-public class TestKComplementaryPairs {
+public class TestComplementaryPairs {
 	
 	private static final int K = 4;
 	private static final int[][] tests = new int[][]{
@@ -25,15 +24,8 @@ public class TestKComplementaryPairs {
 
 	@Test
 	public void test() {
-		for ( int[] A : tests ) {
-			int v1 = ComplementaryPairs.doCheckV1( A, K );
-			int v2 = ComplementaryPairs.doCheckV2( A, K );
-			int v3 = ComplementaryPairs.doCheckV3( A, K );
-			
-			System.out.printf( "v1 = [%d] v2 = [%d] v3 = [%d]\n", v1, v2, v3 );
-			
-			Assert.assertEquals( v1, v2, v3 );
-		}
+		for ( int[] A : tests )
+			System.out.printf( "doCheck = [%d]\n", ComplementaryPairs.doCheck( A, K ) );
 	}
 	
 }
