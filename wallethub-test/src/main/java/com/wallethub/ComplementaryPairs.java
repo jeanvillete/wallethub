@@ -2,7 +2,7 @@ package com.wallethub;
 
 import java.util.HashMap;
 
-public class KComplementaryPairs {
+public class ComplementaryPairs {
 	
 	
 	/**

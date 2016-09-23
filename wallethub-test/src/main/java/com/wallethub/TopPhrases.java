@@ -32,12 +32,12 @@ import java.util.regex.Pattern;
  * @author jean
  *
  */
-public class PhrasesExternalSorting {
+public class TopPhrases {
 
 	String workingDirectory = "/tmp/wallethub";
 
 	public static void main(String[] args) {
-		PhrasesExternalSorting m = new PhrasesExternalSorting();
+		TopPhrases m = new TopPhrases();
 		m.writeOnDisk();
 		m.sortMerge( 0 );
 	}
