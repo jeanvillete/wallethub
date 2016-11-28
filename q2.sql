@@ -37,6 +37,7 @@ BEGIN
 END $
 DELIMITER ;
 --
+select initcap('usa USA Usa uSA') as capitalized;
 select initcap('UNITED states Of AmERIca') as capitalized;
 select initcap('  UNITED   states Of  AmERIca   testing TEST tesTing ') as capitalized;
 select initcap('') as capitalized;
